@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jaini&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0e0e;
+  font-family: "Muli", "sans-serif";
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  box-shadow: rgb(126, 84, 84) 0px 0px 0px 2px inset,
+    rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+    rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+    rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+    rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  background-color: rgb(163, 72, 39);
+}
+.anba {
+  display: flex;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 80%;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.progress {
+  /* background-color: #000000; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: 0.4s ease;
+}
+
+.circle {
+  z-index: 1;
+
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+.fensley {
+  background-color: #233f23;
+  color: white;
+}
+
+.circle.active {
+  border-color: #ffffff;
+}
+
+.btn {
+  background-color: #233f23;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+h2 {
+  letter-spacing: 5px;
+  color: white;
+  font-family: "Jaini", system-ui;
+  position: relative;
+  bottom: 70px;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+p {
+  font-family: monospace;
+  position: relative;
+  top: 78px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-size: 7px;
+}
